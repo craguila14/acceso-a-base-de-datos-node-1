@@ -4,6 +4,9 @@ const app = express();
 
 const PORT = process.env.PORT || 3000; //variable de entorno
 
+//middlewares
+app.use(express.json());
+
 //routes
 app.use("/", router)
 
